@@ -2,6 +2,14 @@
 @import url('./1-timer.css');
 @import url('./2-snackbar.css');
 
+body {
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
 .menu {
   margin: 20px auto;
   text-align: center;
@@ -22,7 +30,12 @@
 .menu-list {
   margin: auto;
 }
-.menu-item {
+.menu-list-back {
+  width: 150px;
+  text-align: center;
+}
+.menu-item,
+.menu-item-back {
   margin-bottom: 18px;
   height: 40px;
   border-radius: 8px;
@@ -31,13 +44,16 @@
 }
 
 .menu-item:hover,
-.menu-item:focus {
+.menu-item-back:hover,
+.menu-item:focus,
+.menu-item-back:focus {
   color: #e6e6e6;
   background: #5680db;
   border: solid #5680db 1px;
 }
 
-.menu-link {
+.menu-link,
+.menu-link-back {
   font-size: 25px;
   display: block;
   width: 100%;
