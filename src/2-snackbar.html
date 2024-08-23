@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="menu-back">
+      <ul class="menu-list-back">
+        <li class="menu-item-back">
+          <a class="menu-link-back" href="./index.html">Go back</a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <form class="form">
+        <span class="label">Delay (ms)</span>
+        <input class="input-delay" type="text" id="datetime-picker" />
+        <fieldset class="fieldset">
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+        <button class="btn-notification" type="button" data-start>
+          Create notification
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
