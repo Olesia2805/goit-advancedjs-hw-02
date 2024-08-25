@@ -17,7 +17,15 @@
     <div class="wrapper">
       <form class="form">
         <span class="label">Delay (ms)</span>
-        <input class="input-delay" type="text" id="datetime-picker" required />
+        <input
+          class="input-delay"
+          type="number"
+          id="datetime-picker"
+          min="1"
+          autocomplete="off"
+          required
+          autofocus
+        />
         <fieldset class="fieldset">
           <legend>State</legend>
           <label>
@@ -29,10 +37,11 @@
             Rejected
           </label>
         </fieldset>
-        <button class="btn-notification" type="button" data-start>
+        <button class="btn-notification" type="submit" data-start>
           Create notification
         </button>
       </form>
     </div>
+    <script src="./js/2-snackbar.js" type="module" defer></script>
   </body>
 </html>
